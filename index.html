@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals Assignment</h1>
+            <p>Week 5 - Mastering JavaScript Basics, Functions, Loops, and DOM Manipulation</p>
+        </header>
+
+        <section id="part1">
+            <h2>Part 1: JavaScript Basics</h2>
+            <p>Variables, data types, operators, and conditionals</p>
+            
+            <div class="part-content">
+                <div class="card">
+                    <h3>User Age Check</h3>
+                    <p>Enter your age to check eligibility for voting:</p>
+                    <input type="number" id="ageInput" placeholder="Enter your age" min="0">
+                    <button onclick="checkAge()">Check Eligibility</button>
+                    <div class="output" id="ageOutput"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part2">
+            <h2>Part 2: JavaScript Functions</h2>
+            <p>Reusable blocks of logic for cleaner code</p>
+            
+            <div class="flex-container">
+                <div class="card">
+                    <h3>Temperature Converter</h3>
+                    <p>Convert Fahrenheit to Celsius:</p>
+                    <input type="number" id="fahrenheitInput" placeholder="Enter °F">
+                    <button onclick="convertTemperature()">Convert</button>
+                    <div class="output" id="temperatureOutput"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>String Formatter</h3>
+                    <p>Format your text:</p>
+                    <input type="text" id="stringInput" placeholder="Enter text">
+                    <select id="formatOption">
+                        <option value="uppercase">UPPERCASE</option>
+                        <option value="lowercase">lowercase</option>
+                        <option value="capitalized">Capitalized Case</option>
+                    </select>
+                    <button onclick="formatString()">Format Text</button>
+                    <div class="output" id="stringOutput"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part3">
+            <h2>Part 3: JavaScript Loops</h2>
+            <p>Repetition and iteration with for and while loops</p>
+            
+            <div class="flex-container">
+                <div class="card">
+                    <h3>For Loop Example</h3>
+                    <p>Generate a multiplication table:</p>
+                    <input type="number" id="numberInput" placeholder="Enter a number" min="1">
+                    <button onclick="generateTable()">Generate Table</button>
+                    <div class="output" id="tableOutput"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>While Loop Example</h3>
+                    <p>Countdown from a number:</p>
+                    <input type="number" id="countdownInput" placeholder="Enter number" min="1">
+                    <button onclick="startCountdown()">Start Countdown</button>
+                    <div class="output" id="countdownOutput"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part4">
+            <h2>Part 4: DOM Manipulation</h2>
+            <p>Making the page interactive with DOM manipulation</p>
+            
+            <div class="dom-interaction">
+                <h3>1. Changing Content and Styles</h3>
+                <p id="changeableText">This text will change when you click the button.</p>
+                <button onclick="changeText()">Change Text</button>
+                <button onclick="changeColor()">Change Color</button>
+                <button onclick="toggleVisibility()">Toggle Visibility</button>
+            </div>
+            
+            <div class="dom-interaction">
+                <h3>2. Creating and Appending Elements</h3>
+                <p>Add a new item to the list:</p>
+                <input type="text" id="newItemInput" placeholder="Enter item">
+                <button onclick="addListItem()">Add Item</button>
+                <ul class="task-list" id="itemList">
+                    <li>Sample item 1 <button onclick="removeItem(this)">Remove</button></li>
+                    <li>Sample item 2 <button onclick="removeItem(this)">Remove</button></li>
+                </ul>
+            </div>
+            
+            <div class="dom-interaction">
+                <h3>3. Handling Events</h3>
+                <p>Move your mouse over the box below:</p>
+                <div id="colorBox" class="color-box" style="background-color: #6e8efb;"></div>
+                <p id="eventOutput">Event feedback will appear here.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Week 5 JavaScript Fundamentals Assignment - Completed</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
